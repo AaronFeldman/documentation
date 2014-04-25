@@ -1,4 +1,4 @@
-documentation
-=============
+Kimai documentation
+====================
 
-Contains the Kimai documentation website
+Find the documentation website at: http://kimai.github.io/documentation/
