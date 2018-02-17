@@ -2,11 +2,10 @@
 
 Creating templates for the invoice extension is actually pretty easy.
 
-You can create templates Open Office documents or HTML pages.
+You can create templates from Open Office documents or by editing HTML pages.
 Existing templates are stored in the directory ```extensions/ki_invoice/invoices/```.
 
-There is a repository for sharing ready-to-use [Invoice templates](https://github.com/kimai/invoice-templates) where you
-can find a Debug HTML invoice, which will help you in inspecting all possible variables while developing your own template.
+There is a repository for sharing ready-to-use [Invoice templates](https://github.com/kimai/invoice-templates).  In that repository there is a sample Debug HTML invoice, which contains all possible variables used by Kimai invoices. Studying this sample invoice can help in developing your own templates.
 
 ## Open Office templates
 
@@ -76,15 +75,15 @@ Fatal error: Uncaught exception 'tinyDocException'  with message 'the PHP global
 #3 extensions/ki_invoice/print.php(204):  tinyDoc->saveXml()
 #4 {main} thrown in extensions/ki_invoice/TinyButStrong/tinyDoc.class.php on  line 997
 ```
-the variable name has a style applied. Select the (or all) variable name(s) and reset them to the default format.
+the variable name has a style applied. Select the (or all of the) variable name(s) and reset them to the default format.
 Then you can format the whole variable name as you want it.
 
 ## HTML templates
 
 Using HTML templates is possible since version 0.9.3.
 
-If you want to create a new HTML template, you have to crete a new subdirectory in ```extensions/ki_invoice/invoices/``` with
+If you want to create a new HTML template, you have to first create a new subdirectory in ```extensions/ki_invoice/invoices/``` with
 an ```index.html``` or ```index.phtml``` file inside.
 
-For example, creating the HTML template called "ACME" you would create: ```extensions/ki_invoice/invoices/ACME/index.html```.
-The easiest way is to duplicate the directory "my_company" and rename the copy.
+For example, in order to create a HTML template called "ACME" you could use the following directory structure: ```extensions/ki_invoice/invoices/ACME/index.html```.
+The easiest way to do this without mistake, is to duplicate the directory, "my_company", and then rename the copy.
